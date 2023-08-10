@@ -1,14 +1,10 @@
 import "./App.css";
-import Quote from "./components/Quote/Quote";
-import Navbar from "./components/Navbar/Navbar";
-import Footer from "./components/Footer/Footer";
+import RootLayout from "./layouts/RootLayout/RootLayout";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Quote />
-      <Footer />
+      <RootLayout />
     </>
   );
 }

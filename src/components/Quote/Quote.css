@@ -6,7 +6,11 @@
 
   width: 50rem;
 
-  margin: 15rem auto;
+  margin: 10rem auto;
+}
+
+.quote > a {
+  text-decoration: none;
 }
 
 .quoteText {
@@ -16,40 +20,4 @@
 
   border-left: 0.5rem solid #f7df94;
   padding-left: 6rem;
-}
-
-.quote-meta-container {
-  color: #f2f2f2;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 0 5rem;
-
-  margin: 4.5rem;
-  padding: 3rem 2rem;
-}
-.quote-meta-container:hover {
-  background-color: #333;
-}
-.quote-meta-container:hover > .quote-meta > .quoteAuthor {
-  color: #f2f2f2;
-}
-
-.quote-meta-container > span {
-  color: "#f2f2f2";
-}
-
-.quoteAuthor {
-  color: #4f4f4f;
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
-.quoteGenre {
-  color: #828282;
-  font-size: 0.875rem;
-  text-transform: lowercase;
-
-  margin-top: 0.5rem;
 }

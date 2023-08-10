@@ -1,25 +1,17 @@
-import { useRecoilValue } from "recoil";
 import "./Quote.css";
+import { useRecoilValue } from "recoil";
 import { quoteState } from "../../atoms/quote";
+import QuoteMeta, { IQuoteMeta } from "./QuoteMeta/QuoteMeta";
+import QuoteText, { IQuoteText } from "./QuoteText/QuoteText";
 
-interface Quote {
-  quoteText: string;
-  quoteAuthor: string;
-  quoteGenre: string;
-}
+export interface IQuote extends IQuoteMeta, IQuoteText {}
 
 const Quote = () => {
   const { quoteText, quoteAuthor, quoteGenre } = useRecoilValue(quoteState);
   return (
     <div className="quote">
-      <div className="quoteText">{quoteText}</div>
-      <div className="quote-meta-container">
-        <div className="quote-meta">
-          <div className="quoteAuthor">{quoteAuthor}</div>
-          <div className="quoteGenre">{quoteGenre}</div>
-        </div>
-        <span className="material-symbols-outlined">east</span>
-      </div>
+      <QuoteText quoteText={quoteText} />
+      <QuoteMeta {...{ quoteAuthor, quoteGenre }} />
     </div>
   );
 };

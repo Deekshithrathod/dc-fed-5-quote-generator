@@ -1,7 +1,7 @@
 import { atom } from "recoil";
-import Quote from "../components/Quote/Quote";
+import { IQuote } from "../components/Quote/Quote";
 
-const defaultQuote: Quote = {
+const defaultQuote: IQuote = {
   quoteText:
     "The first rule of any technology used in a business is that automation applied to an efficient operation will magnify the efficiency. The second is that automation applied to an inefficient operation will magnify the inefficiency.",
   quoteAuthor: "Bill Gates",
