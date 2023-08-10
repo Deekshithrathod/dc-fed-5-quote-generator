@@ -1,0 +1,22 @@
+nav {
+  color: #4f4f4f;
+  font-family: "Raleway";
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+
+  display: flex;
+  justify-content: flex-end;
+
+  width: 70%;
+  max-width: 800rem;
+
+  padding: 2rem 6rem;
+  margin: 0 auto;
+}
+
+nav > span {
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+}
