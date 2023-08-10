@@ -12,3 +12,12 @@
   padding: 10rem 0;
   margin: 0 auto;
 }
+
+@media (max-width: 700px) {
+  .authorQuotes {
+    gap: 4rem;
+
+    width: 20rem;
+    padding: 5rem 0;
+  }
+}

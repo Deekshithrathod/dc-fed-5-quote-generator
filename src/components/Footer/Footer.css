@@ -17,3 +17,9 @@ footer > b > a {
   text-transform: none;
   text-decoration: none;
 }
+
+@media (max-width: 700px) {
+  footer {
+    margin-top: 5rem;
+  }
+}

@@ -35,3 +35,14 @@
 
   margin-top: 0.5rem;
 }
+
+@media (max-width: 700px) {
+  .quote-meta-container {
+    margin: 4rem 0 15rem 0;
+    padding: 1rem 2rem;
+  }
+
+  .quote-meta-container > span {
+    color: #4f4f4f;
+  }
+}
