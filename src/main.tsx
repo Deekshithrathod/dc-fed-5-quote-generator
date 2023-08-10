@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.tsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import "./index.css";
 import { RecoilRoot } from "recoil";
 import AuthorQuotes from "./pages/AuthorQuotes/AuthorQuotes.tsx";
 import SingleQuote from "./pages/SingleQuote/SingleQuote.tsx";
+import App from "./App.tsx";
+import "./index.css";
 
 const router = createBrowserRouter([
   {
