@@ -9,10 +9,10 @@ export interface IQuote extends IQuoteMeta, IQuoteText {}
 const Quote = () => {
   const { quoteText, quoteAuthor, quoteGenre } = useRecoilValue(quoteState);
   return (
-    <div className="quote">
+    <main className="quote">
       <QuoteText quoteText={quoteText} />
       <QuoteMeta {...{ quoteAuthor, quoteGenre }} />
-    </div>
+    </main>
   );
 };
 

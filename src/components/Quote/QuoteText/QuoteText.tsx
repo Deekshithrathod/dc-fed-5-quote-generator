@@ -5,7 +5,7 @@ export interface IQuoteText {
 }
 
 const QuoteText = ({ quoteText }: IQuoteText) => {
-  return <div className="quoteText">{quoteText}</div>;
+  return <article className="quoteText">{quoteText}</article>;
 };
 
 export default QuoteText;
